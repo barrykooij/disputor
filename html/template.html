@@ -16,6 +16,7 @@
   }
   .disclaimer {
     font-style: italic;
+    font-size: 80%;
   }
   .table-header-col {
     width: 200px;
@@ -32,8 +33,12 @@
 </head>
 <body>
   <h1>License Details for %LICENSE_KEY%</h1>
+  <p>
+    Customer bought a license at our webshop that grans them access to our virtual products. The payment of the order has been disputed by the user.
+    Our payment provider asked us to provide proof that customer did buy the license and used it. This documents list the activity of the customer on the license they've bought.
+  </p>
   <p class="disclaimer"><strong>CONFIDENTIALITY NOTICE</strong> -
-    This is an automatically generated license data report for order dispute porpuses.
+    This is an automatically generated license data report for order disputes.
     The information contained in this document is confidential, privileged and only for the
 information of the intended recipient and may not be used, published or redistributed.</p>
 
@@ -55,6 +60,10 @@ information of the intended recipient and may not be used, published or redistri
     <tr>
       <td class="table-header-col">Date Expires</td>
       <td>%DATE_EXPIRES%</td>
+    </tr>
+    <tr>
+      <td class="table-header-col">User IP Address</td>
+      <td>%USER_IP%</td>
     </tr>
   </table>
 
