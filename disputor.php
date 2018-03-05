@@ -3,8 +3,10 @@
 // autoload
 require_once 'vendor/autoload.php';
 
+$creds = require('db.php');
+
 // Create connection
-$con = new mysqli('localhost', 'root', 'root', $argv[1]);
+$con = new mysqli('localhost', $creds['username'], $creds['password'], $argv[1]);
 
 // Check connection
 if($con->connect_error) {
